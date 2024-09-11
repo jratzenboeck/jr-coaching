@@ -97,11 +97,9 @@
       <h2 class="text-3xl font-semibold">Mache den nächsten Schritt</h2>
       <p class="mt-4">Dein Interesse ist geweckt? Dann kontaktiere mich gleich um ein kostenloses Erstgrespräch zu vereinbaren.</p>
       <form name="contact" method="POST" class="mt-8 max-w-lg mx-auto" netlify>
-        <!-- Hidden input required for Netlify form handling -->
-        <input type="hidden" name="form-name" value="contact">
-        <input type="text" placeholder="Name" class="w-full p-3 mb-4 text-gray-800 rounded-lg" required>
-        <input type="email" placeholder="Email" class="w-full p-3 mb-4 text-gray-800 rounded-lg" required>
-        <textarea placeholder="Deine Nachricht" class="w-full p-3 mb-4 text-gray-800 rounded-lg" required></textarea>
+        <input type="text" name="name" placeholder="Name" class="w-full p-3 mb-4 text-gray-800 rounded-lg" required>
+        <input type="email" name="email" placeholder="Email" class="w-full p-3 mb-4 text-gray-800 rounded-lg" required>
+        <textarea placeholder="Deine Nachricht" name="message" class="w-full p-3 mb-4 text-gray-800 rounded-lg" required></textarea>
         <button type="submit" class="px-6 py-3 bg-white text-blue-500 font-semibold rounded-lg">Nachricht senden</button>
       </form>
       <p class="mt-8">Gerne kannst du mich auch telefonisch unter <a href="tel:+4367761235089" class="hover:underline">+4367761235089</a> erreichen.</p>
