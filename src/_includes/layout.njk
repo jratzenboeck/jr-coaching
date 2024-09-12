@@ -11,16 +11,39 @@
 
   <!-- Hero Section -->
   <header class="bg-white shadow-lg">
-    <div class="container mx-auto flex items-center justify-between p-6">
+    
+    <div class="container flex items-center justify-between p-6">
       <h1 class="text-3xl font-bold text-gray-900"><a href="/">jr-coaching</a></h1>
+      
       <nav>
-        <ul class="flex space-x-4">
+        <!-- Hamburger Menu for Mobile -->
+        <div class="block lg:hidden h-6">
+            <button id="menu-btn" class="text-gray-900 focus:outline-none">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+        <ul class="hidden lg:flex space-x-4">
           <li><a href="#about" class="text-gray-700 hover:text-blue-500">Über mich</a></li>
           <li><a href="#services" class="text-gray-700 hover:text-blue-500">Mein Angebot</a></li>
           <li><a href="#contact" class="text-gray-700 hover:text-blue-500">Kontakt</a></li>
         </ul>
+       
       </nav>
+
     </div>
+
+    <nav id="menu" class="hidden lg:hidden bg-gray-700 space-y-2 p-4 h-screen w-full absolute top-0 left-0 z-10 opacity-90">
+        <button id="close" type="button" class="absolute top-5 right-5 text-white text-3xl">X</button>
+       <!-- Mobile Menu Links -->
+        <ul id="menu-item-container" class="flex flex-col justify-center items-center h-full">
+            <li><a href="#about" class="block text-white hover:bg-gray-600 p-4 text-xl">Über mich</a></li>
+            <li><a href="#services" class="block text-white hover:bg-gray-600 p-4 text-xl">Mein Angebot</a></li>
+            <li><a href="#contact" class="block text-white hover:bg-gray-600 p-4 text-xl">Kontakt</a></li>
+        </ul>
+      </nav>
   </header>
 
   {{ content | safe }}
@@ -28,6 +51,29 @@
   <footer class="py-6 bg-gray-900 text-center text-gray-400">
     <p>&copy; 2024 jr-coaching. Alle Rechte vorbehalten.</p>
   </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    const closeBtn = document.getElementById('close');
+    const menuItemContainer = document.getElementById('menu-item-container')
+
+    menuBtn.addEventListener('click', () => {
+        document.body.classList.toggle('overflow-y-hidden');
+        menu.classList.toggle('hidden');
+    });
+    Array.from(menuItemContainer.children)
+      .forEach((item) => item.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        document.body.classList.toggle('overflow-y-hidden');
+      }
+    ));
+
+    closeBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      document.body.classList.toggle('overflow-y-hidden');
+    });
+  </script>
   
 </body>
 </html>
