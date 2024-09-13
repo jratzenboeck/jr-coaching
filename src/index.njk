@@ -71,14 +71,13 @@ layout: layout.njk
     <section id="contact" class="py-12 bg-blue-500 text-white container mx-auto text-center">
       <h2 class="text-3xl font-semibold">Mache den nächsten Schritt</h2>
       <p class="mt-4">Dein Interesse ist geweckt? Dann kontaktiere mich gleich um ein kostenloses Erstgrespräch zu vereinbaren.</p>
-      <form name="contact" method="POST" action="/thankyou" class="mt-8 max-w-lg mx-auto" netlify netlify-honeypot="bot-field" data-netlify-recaptcha="true">
+      <form name="contact" method="POST" action="/thankyou" class="mt-8 max-w-lg mx-auto" netlify netlify-honeypot="bot-field">
         <label class="hidden">
           Don’t fill this out if you’re human: <input name="bot-field" />
         </label>
         <input type="text" name="name" placeholder="Name" class="w-full p-3 mb-4 text-gray-800 rounded-lg" required>
         <input type="email" name="email" placeholder="Email" class="w-full p-3 mb-4 text-gray-800 rounded-lg" required>
         <textarea placeholder="Deine Nachricht" name="message" class="w-full p-3 mb-4 text-gray-800 rounded-lg" required></textarea>
-        <div data-netlify-recaptcha="true" class="w-full flex justify-center mb-4"></div>
         <button type="submit" class="px-6 py-3 bg-white text-blue-500 font-semibold rounded-lg hover:bg-gray-100 transition duration-300">Nachricht senden</button>
       </form>
       <p class="mt-8">Gerne kannst du mich auch telefonisch unter <a href="tel:+4367761235089" class="hover:underline">+4367761235089</a> erreichen.</p>
