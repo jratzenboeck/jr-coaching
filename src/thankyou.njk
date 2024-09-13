@@ -1,22 +1,11 @@
 ---
 layout: layout.njk
+title: "jr-coaching - Danke für deine Nachricht!"
 ---
 
 <body class="bg-gray-100 text-gray-800 flex flex-col h-screen">
 
-  <!-- Hero Section -->
-  <header class="bg-white shadow-lg">
-    <div class="container mx-auto flex items-center justify-between p-6">
-      <h1 class="text-3xl font-bold text-gray-900"><a href="/">jr-coaching</a></h1>
-      <nav>
-        <ul class="flex space-x-4">
-          <li><a href="#about" class="text-gray-700 hover:text-blue-500">Über mich</a></li>
-          <li><a href="#services" class="text-gray-700 hover:text-blue-500">Mein Angebot</a></li>
-          <li><a href="#contact" class="text-gray-700 hover:text-blue-500">Kontakt</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  {% include "partials/_header.njk" %}
 
   <section class="bg-blue-500 text-white p-8 flex-1 flex items-center flex-col justify-center">
       <!-- Success Icon (Checkmark) -->
@@ -37,5 +26,7 @@ layout: layout.njk
     </section>
 
     {% include "partials/_footer.njk" %}
+
+    <script src="/index.js"></script>
 
   </body>
