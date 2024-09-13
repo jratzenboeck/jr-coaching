@@ -2,87 +2,127 @@
 layout: layout.njk
 ---
 
-<!-- Hero Section -->
-<section class="py-12 bg-black bg-opacity-50">
-  <div class="container mx-auto text-center text-white px-6">
-      <h2 class="text-4xl font-bold">Erfülle dir deine sportlichen Träume</h2>
-      <p class="mt-4 text-lg">Du bist begeisterter Ausdauersportler oder möchtest einer werden?</p>
-      <p class="mt-1 text-lg">Dann bist du hier richtig!</p>
-      <p class="mt-1 text-lg">Ich begleite dich mit einer individuellen Trainingsplanung- und Betreuung auf dem Weg zur Ziellinie.</p>
-      <div class="flex justify-center space-x-6 mt-8">
-        <div class="flex flex-col items-center">
-        <img src="img/triathlon.jpg" alt="Image 1" class="w-36 h-36 rounded-full object-cover shadow-lg">
-        <p class="mt-2 text-lg">Triathlon</p>
-        </div>
-        <div class="flex flex-col items-center">
-          <img src="img/radsport.jpg" alt="Image 2" class="w-36 h-36 rounded-full object-cover shadow-lg">
-          <p class="mt-2 text-lg">Radsport</p>
-        </div>
-        <div class="flex flex-col items-center">
-          <img src="img/laufen.jpg" alt="Image 3" class="w-36 h-36 rounded-full object-cover shadow-lg">
-          <p class="mt-2 text-lg">Laufen</p>
-        </div>
-      </div>
-      <a href="#contact" class="mt-8 inline-block px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition duration-300">Ich hab Interesse</a>
-  </div>
-</section>
+<body class="bg-gray-100 text-gray-800">
 
-<!-- About Section -->
-<section id="about" class="py-12 bg-white">
-  <div class="container mx-auto px-6">
-    <h2 class="text-3xl font-semibold text-gray-800 text-center">Über mich</h2>
-    <div class="mt-8 flex flex-col lg:flex-row max-w-5xl mx-auto lg:space-x-8">
-      <img src="img/portrait.JPG" class="w-full lg:w-1/2 mb-4 lg:mb-0 rounded-lg shadow-lg">
-      <div  class="w-full lg:w-1/2">
-        <p class="text-md text-gray-600">Ich bin Jürgen, diplomierter Fitness- und Gesundheitstrainer und leidenschaftlicher Ausdauersportler. </p>
-        <p class="mt-2 text-md text-gray-600">Bereits einige Jahre ist es her als ich 2016 meinen ersten Triathlon erfolgreich absolvierte. Seitdem hat mich der Sport in den Bann gezogen und Schwimmen, Radfahren und Laufen sind Teil meines Alltags geworden.</p>
-        <p class="mt-2 text-md text-gray-600">Mit jeder Saison wurden meine Ziele ambitionierter, mein Training strukturierter und meine Fortschritte deutlich.</p>
-        <p class="mt-2 text-md text-gray-600">Ich erreichte sportliche Leistungen, die mir vor einigen Jahren noch utopisch vor kamen.</p>
-        <p class="mt-2 text-md text-gray-600">Dieses Feuer für den Ausdauersport möchte ich unbedingt an andere Menschen weitergeben bzw. ihnen dabei helfen sich ihre sportlichen Träume zu verwirklichen. Ich bin überzeugt, dass ich mit meinem fundierten Wissen aus meiner Ausbildung gepaart mit meinem sportwissenschaftlichen Enthusiasmus im Bereich des Ausdauersports sowie meiner mehrjährigen praktischen Erfahrung im Triathlontraining, einen großen Beitrag leisten kann, damit du deine Ziele erreichst.</p>
-        <ul class="mt-4 ml-4 list-disc text-md text-gray-600">
-          <li>Dipl. Fitness- und Gesunheitstrainer (Vitalakademie Linz)</li>
-          <li>Zweifacher Ironman Finisher (2024 Sub10 bei der Challenge Roth)
+  <!-- Hero Section -->
+  <header class="bg-white shadow-lg">
+    
+    <div class="container flex items-center justify-between py-6">
+      <h1 class="text-3xl font-bold text-gray-900"><a href="/">jr-coaching</a></h1>
+      
+      <nav>
+        <!-- Hamburger Menu for Mobile -->
+        <div class="block lg:hidden h-6">
+            <button id="menu-btn" class="text-gray-900 focus:outline-none">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+        <ul class="hidden lg:flex space-x-4">
+          <li><a href="#about" class="text-gray-700 hover:text-blue-500">Über mich</a></li>
+          <li><a href="#services" class="text-gray-700 hover:text-blue-500">Mein Angebot</a></li>
+          <li><a href="#contact" class="text-gray-700 hover:text-blue-500">Kontakt</a></li>
         </ul>
-      </div>
-  </div>
-</section>
+       
+      </nav>
 
-<!-- Services Section -->
-<section id="services" class="py-12 bg-gray-100">
-  <div class="container mx-auto text-center px-6">
-    <h2 class="text-3xl font-semibold text-gray-800">Mein Angebot</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-      <div class="bg-white p-6 shadow-lg rounded-lg">
-        <h3 class="text-xl font-semibold text-gray-800">Personal Coaching</h3>
-        <p class="mt-4 text-gray-600">Mit einem auf dich abgestimmten Trainingskonzept begleite ich dich auf dem Weg zur Erreichung deiner sportlichen Ziele. Ich erarbeite in enger Absprache mit dir einen individuellen Trainingsplan, analysiere die Einheiten und betreue dich ganzheitlich.</p>
-      </div>
-      <div class="bg-white p-6 shadow-lg rounded-lg">
-        <h3 class="text-xl font-semibold text-gray-800">Trainingsberatung</h3>
-        <p class="mt-4 text-gray-600">Du hast ein Trainigskonzept, bist dir aber nicht sicher ob es zu dir passt? Ich nehme es unter die Lupe und zeige dir an welchen Stellschrauben du drehen kannst um die nächsten Schritte zu machen.</p>
-      </div>
-      <div class="bg-white p-6 shadow-lg rounded-lg">
-        <h3 class="text-xl font-semibold text-gray-800">Gruppencoaching</h3>
-        <p class="mt-4 text-gray-600">Mit meinem Laufcoaching für Gruppen gehört eintöniges Laufen der Vergangenheit an. Egal ob für dein Unternehmen, deinen Verein oder deine Freundesgruppe, ich habe ein passendes Programm für euch.</p>
-      </div>
     </div>
-  </div>
-</section>
 
-<!-- Contact Section -->
-<section id="contact" class="py-12 bg-blue-500 text-white">
-  <div class="container mx-auto text-center px-6">
-    <h2 class="text-3xl font-semibold">Mache den nächsten Schritt</h2>
-    <p class="mt-4">Dein Interesse ist geweckt? Dann kontaktiere mich gleich um ein kostenloses Erstgrespräch zu vereinbaren.</p>
-    <form name="contact" method="POST" action="/thankyou" class="mt-8 max-w-lg mx-auto" netlify netlify-honeypot="bot-field" data-netlify-recaptcha="true">
-      <label class="hidden">
-        Don’t fill this out if you’re human: <input name="bot-field" />
-      </label>
-      <input type="text" name="name" placeholder="Name" class="w-full p-3 mb-4 text-gray-800 rounded-lg" required>
-      <input type="email" name="email" placeholder="Email" class="w-full p-3 mb-4 text-gray-800 rounded-lg" required>
-      <textarea placeholder="Deine Nachricht" name="message" class="w-full p-3 mb-4 text-gray-800 rounded-lg" required></textarea>
-      <div data-netlify-recaptcha="true" class="w-full flex justify-center mb-4"></div>
-      <button type="submit" class="px-6 py-3 bg-white text-blue-500 font-semibold rounded-lg hover:bg-gray-100 transition duration-300">Nachricht senden</button>
-    </form>
-    <p class="mt-8">Gerne kannst du mich auch telefonisch unter <a href="tel:+4367761235089" class="hover:underline">+4367761235089</a> erreichen.</p>
-  </div>
-</section>
+    <nav id="menu" class="hidden lg:hidden bg-gray-700 space-y-2 p-4 h-screen w-full absolute top-0 left-0 z-10 opacity-90">
+        <button id="close" type="button" class="absolute top-5 right-5 text-white text-3xl">X</button>
+       <!-- Mobile Menu Links -->
+        <ul id="menu-item-container" class="flex flex-col justify-center items-center h-full">
+            <li><a href="#about" class="block text-white hover:bg-gray-600 p-4 text-xl">Über mich</a></li>
+            <li><a href="#services" class="block text-white hover:bg-gray-600 p-4 text-xl">Mein Angebot</a></li>
+            <li><a href="#contact" class="block text-white hover:bg-gray-600 p-4 text-xl">Kontakt</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="py-12 bg-black bg-opacity-50 container mx-auto text-center text-white">
+        <h2 class="text-4xl font-bold">Erfülle dir deine sportlichen Träume</h2>
+        <p class="mt-4 text-lg">Du bist begeisterter Ausdauersportler oder möchtest einer werden?</p>
+        <p class="mt-1 text-lg">Dann bist du hier richtig!</p>
+        <p class="mt-1 text-lg">Ich begleite dich mit einer individuellen Trainingsplanung- und Betreuung auf dem Weg zur Ziellinie.</p>
+        <div class="flex justify-center space-x-6 mt-8">
+          <div class="flex flex-col items-center">
+          <img src="img/triathlon.jpg" alt="Image 1" class="w-36 h-36 rounded-full object-cover shadow-lg">
+          <p class="mt-2 text-lg">Triathlon</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="img/radsport.jpg" alt="Image 2" class="w-36 h-36 rounded-full object-cover shadow-lg">
+            <p class="mt-2 text-lg">Radsport</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="img/laufen.jpg" alt="Image 3" class="w-36 h-36 rounded-full object-cover shadow-lg">
+            <p class="mt-2 text-lg">Laufen</p>
+          </div>
+        </div>
+        <a href="#contact" class="mt-8 inline-block px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition duration-300">Ich hab Interesse</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-12 bg-white container mx-auto">
+      <h2 class="text-3xl font-semibold text-gray-800 text-center">Über mich</h2>
+      <div class="mt-8 flex flex-col lg:flex-row max-w-5xl mx-auto lg:space-x-8">
+        <img src="img/portrait.JPG" class="w-full lg:w-1/2 mb-4 lg:mb-0 rounded-lg shadow-lg">
+        <div  class="w-full lg:w-1/2">
+          <p class="text-md text-gray-600">Ich bin Jürgen, diplomierter Fitness- und Gesundheitstrainer und leidenschaftlicher Ausdauersportler. </p>
+          <p class="mt-2 text-md text-gray-600">Bereits einige Jahre ist es her als ich 2016 meinen ersten Triathlon erfolgreich absolvierte. Seitdem hat mich der Sport in den Bann gezogen und Schwimmen, Radfahren und Laufen sind Teil meines Alltags geworden.</p>
+          <p class="mt-2 text-md text-gray-600">Mit jeder Saison wurden meine Ziele ambitionierter, mein Training strukturierter und meine Fortschritte deutlich.</p>
+          <p class="mt-2 text-md text-gray-600">Ich erreichte sportliche Leistungen, die mir vor einigen Jahren noch utopisch vor kamen.</p>
+          <p class="mt-2 text-md text-gray-600">Dieses Feuer für den Ausdauersport möchte ich unbedingt an andere Menschen weitergeben bzw. ihnen dabei helfen sich ihre sportlichen Träume zu verwirklichen. Ich bin überzeugt, dass ich mit meinem fundierten Wissen aus meiner Ausbildung gepaart mit meinem sportwissenschaftlichen Enthusiasmus im Bereich des Ausdauersports sowie meiner mehrjährigen praktischen Erfahrung im Triathlontraining, einen großen Beitrag leisten kann, damit du deine Ziele erreichst.</p>
+          <ul class="mt-4 ml-4 list-disc text-md text-gray-600">
+            <li>Dipl. Fitness- und Gesunheitstrainer (Vitalakademie Linz)</li>
+            <li>Zweifacher Ironman Finisher (2024 Sub10 bei der Challenge Roth)
+          </ul>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-12 bg-gray-100 container mx-auto text-center">
+      <h2 class="text-3xl font-semibold text-gray-800">Mein Angebot</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+        <div class="bg-white p-6 shadow-lg rounded-lg">
+          <h3 class="text-xl font-semibold text-gray-800">Personal Coaching</h3>
+          <p class="mt-4 text-gray-600">Mit einem auf dich abgestimmten Trainingskonzept begleite ich dich auf dem Weg zur Erreichung deiner sportlichen Ziele. Ich erarbeite in enger Absprache mit dir einen individuellen Trainingsplan, analysiere die Einheiten und betreue dich ganzheitlich.</p>
+        </div>
+        <div class="bg-white p-6 shadow-lg rounded-lg">
+          <h3 class="text-xl font-semibold text-gray-800">Trainingsberatung</h3>
+          <p class="mt-4 text-gray-600">Du hast ein Trainigskonzept, bist dir aber nicht sicher ob es zu dir passt? Ich nehme es unter die Lupe und zeige dir an welchen Stellschrauben du drehen kannst um die nächsten Schritte zu machen.</p>
+        </div>
+        <div class="bg-white p-6 shadow-lg rounded-lg">
+          <h3 class="text-xl font-semibold text-gray-800">Gruppencoaching</h3>
+          <p class="mt-4 text-gray-600">Mit meinem Laufcoaching für Gruppen gehört eintöniges Laufen der Vergangenheit an. Egal ob für dein Unternehmen, deinen Verein oder deine Freundesgruppe, ich habe ein passendes Programm für euch.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 bg-blue-500 text-white container mx-auto text-center">
+      <h2 class="text-3xl font-semibold">Mache den nächsten Schritt</h2>
+      <p class="mt-4">Dein Interesse ist geweckt? Dann kontaktiere mich gleich um ein kostenloses Erstgrespräch zu vereinbaren.</p>
+      <form name="contact" method="POST" action="/thankyou" class="mt-8 max-w-lg mx-auto" netlify netlify-honeypot="bot-field" data-netlify-recaptcha="true">
+        <label class="hidden">
+          Don’t fill this out if you’re human: <input name="bot-field" />
+        </label>
+        <input type="text" name="name" placeholder="Name" class="w-full p-3 mb-4 text-gray-800 rounded-lg" required>
+        <input type="email" name="email" placeholder="Email" class="w-full p-3 mb-4 text-gray-800 rounded-lg" required>
+        <textarea placeholder="Deine Nachricht" name="message" class="w-full p-3 mb-4 text-gray-800 rounded-lg" required></textarea>
+        <div data-netlify-recaptcha="true" class="w-full flex justify-center mb-4"></div>
+        <button type="submit" class="px-6 py-3 bg-white text-blue-500 font-semibold rounded-lg hover:bg-gray-100 transition duration-300">Nachricht senden</button>
+      </form>
+      <p class="mt-8">Gerne kannst du mich auch telefonisch unter <a href="tel:+4367761235089" class="hover:underline">+4367761235089</a> erreichen.</p>
+    </section>
+  </main>
+
+  {% include "partials/_footer.njk" %}
+
+  <script src="index.js"></script>
+  
+</body>
+
